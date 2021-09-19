@@ -20,3 +20,27 @@ fs.readFile(__filename, () => {
 
 console.log(8);
 ```
+
+## Answer
+
+> 8,3,2,1,4,7,6,5
+
+## Node.JS Event Loop
+
+### Micro-Task Queues
+
+- Process.nextTick()
+
+- Promises Resolve/Reject
+
+## Main Event Loop
+
+- Poll
+
+- Check
+
+- Close
+
+- Timers
+
+- Pending
