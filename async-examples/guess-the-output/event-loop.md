@@ -37,10 +37,20 @@ console.log(8);
 
 - Poll
 
+> Polling -
+
 - Check
+
+> Check -
 
 - Close
 
+> close -
+
 - Timers
 
+> timers -
+
 - Pending
+
+> pending -
