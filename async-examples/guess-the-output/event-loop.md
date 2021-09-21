@@ -35,22 +35,22 @@ console.log(8);
 
 ## Main Event Loop
 
-- Poll
+> Polling
 
-> Polling -
-
-- Check
+The poll phase executes I/O-related callbacks. This is the phase that application code is most likely to execute in. When your main application code starts running, it runs in this phase.
 
 > Check -
 
-- Close
+In this phase, callbacks that are triggered via setImmediate() are executed.
 
 > close -
 
-- Timers
+This phase executes callbacks that are triggered via EventEmitter close events. For example, when a net.Server TCP server closes, it emits a close event that runs a callback in this phase.
 
 > timers -
 
-- Pending
+Callbacks scheduled using setTimeout() and setInterval() are executed in this phase.
 
 > pending -
+
+Special system events are run in this phase, like when a net.Socket TCP socket throws an ECONNREFUSED error
